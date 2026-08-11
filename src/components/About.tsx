@@ -16,7 +16,9 @@ export default function About() {
         </Reveal>
 
         <Reveal delay={100} className="space-y-8 sm:w-2/3">
-          <p className="leading-relaxed text-muted">{profile.bio}</p>
+          <p className="whitespace-pre-line leading-relaxed text-muted">
+            {profile.bio}
+          </p>
 
           <div>
             <h3 className="mb-3 text-sm font-semibold uppercase tracking-widest text-muted">
