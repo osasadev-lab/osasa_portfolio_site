@@ -1,4 +1,5 @@
 import { profile } from "@/lib/data";
+import Reveal from "./Reveal";
 
 export default function About() {
   return (
@@ -7,14 +8,14 @@ export default function About() {
       className="border-t border-border bg-surface px-6 py-20"
     >
       <div className="mx-auto flex max-w-5xl flex-col gap-10 sm:flex-row sm:justify-between">
-        <div className="sm:w-1/3">
+        <Reveal className="sm:w-1/3">
           <h2 className="text-sm font-semibold uppercase tracking-widest text-muted">
             About
           </h2>
           <p className="mt-2 text-2xl font-bold tracking-tight">自己紹介</p>
-        </div>
+        </Reveal>
 
-        <div className="space-y-8 sm:w-2/3">
+        <Reveal delay={100} className="space-y-8 sm:w-2/3">
           <p className="leading-relaxed text-muted">{profile.bio}</p>
 
           <div>
@@ -22,17 +23,19 @@ export default function About() {
               Skills
             </h3>
             <ul className="flex flex-wrap gap-2">
-              {profile.skills.map((skill) => (
-                <li
+              {profile.skills.map((skill, index) => (
+                <Reveal
+                  as="li"
                   key={skill}
-                  className="rounded-full border border-border bg-background px-3 py-1 text-sm"
+                  delay={150 + index * 60}
+                  className="rounded-full border border-border bg-background px-3 py-1 text-sm transition-all hover:-translate-y-0.5 hover:border-foreground hover:shadow-sm"
                 >
                   {skill}
-                </li>
+                </Reveal>
               ))}
             </ul>
           </div>
-        </div>
+        </Reveal>
       </div>
     </section>
   );
