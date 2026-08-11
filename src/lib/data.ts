@@ -9,24 +9,22 @@ export type Project = {
 
 // TODO: 実際のプロフィール情報に差し替えてください
 export const profile = {
-  name: "Osasa",
+  name: "Yuya Sasaki",
   role: "Web Engineer",
   tagline:
-    "使う人の体験を第一に考えた、シンプルで機能的なプロダクトをつくっています。",
-  bio: "フロントエンドからバックエンドまで一貫して開発できるWebエンジニアです。ユーザーにとって分かりやすく、保守しやすいコードを書くことを大切にしています。新しい技術のキャッチアップにも積極的で、日々の学びを実際のプロジェクトに反映することを心がけています。",
+    "使う人の体験を第一に考え、\nシンプルで機能的なプロダクトを作ってます。",
+  bio: "ユーザーにとって分かりやすく、保守しやすいコードを書くことを大切にしています。新しい技術のキャッチアップにも積極的で、日々の学びを実際のプロジェクトに反映することを心がけています。",
   skills: [
-    "TypeScript",
-    "React",
+    "PHP(Laravel)",
+    "Java(Spring Boot)",
+    "Go(Gin)",
     "Next.js",
-    "Node.js",
-    "Python",
+    "HTML/CSS/JavaScript",
     "Git",
-    "Figma",
   ],
   links: {
     github: "https://github.com/osasadev-lab",
-    x: "#",
-    email: "mailto:example@example.com",
+    email: "osasadev@gmail.com",
   },
 };
 

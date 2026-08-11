@@ -32,14 +32,6 @@ export default function Footer() {
           >
             GitHub
           </a>
-          <a
-            href={profile.links.x}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-foreground"
-          >
-            X (Twitter)
-          </a>
         </div>
 
         <p className="pt-8 text-xs text-muted">

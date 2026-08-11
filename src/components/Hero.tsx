@@ -16,7 +16,7 @@ export default function Hero() {
         <p className="text-sm font-medium uppercase tracking-widest text-accent">
           {profile.role}
         </p>
-        <h1 className="max-w-2xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
+        <h1 className="max-w-2xl whitespace-pre-line text-3xl font-bold leading-tight tracking-tight sm:text-4xl">
           {profile.tagline}
         </h1>
       </div>
