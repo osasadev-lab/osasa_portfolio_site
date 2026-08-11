@@ -34,13 +34,13 @@ export const profile = {
 export const projects: Project[] = [
   {
     id: "project-1",
-    title: "サンプルプロジェクト A",
+    title: "コーポレートサイトを考える",
     description:
-      "プロジェクトの概要をここに記載します。どんな課題を解決するために作ったのか、工夫した点などを紹介してください。",
-    tags: ["Next.js", "TypeScript", "Tailwind CSS"],
-    image: "/works/project-1.svg",
-    link: "#",
-    repo: "#",
+      "球体を回転させながらコンテンツを探索する、3Dコーポレートサイトのサンプルです。",
+    tags: ["Next.js", "React", "TypeScript", "Three.js", "Tailwind CSS"],
+    image: "/works/1.png",
+    link: "https://3d-fictitious-company.vercel.app/",
+    repo: "https://github.com/osasadev-lab/3D_FictitiousCompany",
   },
   {
     id: "project-2",
