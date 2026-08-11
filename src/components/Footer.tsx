@@ -1,4 +1,5 @@
 import { profile } from "@/lib/data";
+import Reveal from "./Reveal";
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       id="contact"
       className="border-t border-border bg-surface px-6 py-16"
     >
-      <div className="mx-auto flex max-w-5xl flex-col items-start gap-6">
+      <Reveal className="mx-auto flex max-w-5xl flex-col items-start gap-6">
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-widest text-muted">
             Contact
@@ -18,7 +19,7 @@ export default function Footer() {
 
         <a
           href={profile.links.email}
-          className="text-lg font-medium text-accent hover:opacity-80"
+          className="text-lg font-medium text-accent transition-opacity hover:opacity-80"
         >
           {profile.links.email.replace("mailto:", "")}
         </a>
@@ -28,7 +29,7 @@ export default function Footer() {
             href={profile.links.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-foreground"
+            className="transition-colors hover:text-foreground"
           >
             GitHub
           </a>
@@ -37,7 +38,7 @@ export default function Footer() {
         <p className="pt-8 text-xs text-muted">
           © {new Date().getFullYear()} {profile.name}
         </p>
-      </div>
+      </Reveal>
     </footer>
   );
 }

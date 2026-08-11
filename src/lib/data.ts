@@ -3,6 +3,7 @@ export type Project = {
   title: string;
   description: string;
   tags: string[];
+  image?: string;
   link?: string;
   repo?: string;
 };
@@ -13,13 +14,14 @@ export const profile = {
   role: "Web Engineer",
   tagline:
     "使う人の体験を第一に考え、\nシンプルで機能的なプロダクトを作ってます。",
-  bio: "ユーザーにとって分かりやすく、保守しやすいコードを書くことを大切にしています。新しい技術のキャッチアップにも積極的で、日々の学びを実際のプロジェクトに反映することを心がけています。",
+  bio: "ユーザーにとって分かりやすく、保守しやすいコードを書くことを大切にしています。新しい技術のキャッチアップにも積極的に取り組んでいます。",
   skills: [
     "PHP(Laravel)",
     "Java(Spring Boot)",
     "Go(Gin)",
     "Next.js",
     "HTML/CSS/JavaScript",
+    "SQL",
     "Git",
   ],
   links: {
@@ -36,6 +38,7 @@ export const projects: Project[] = [
     description:
       "プロジェクトの概要をここに記載します。どんな課題を解決するために作ったのか、工夫した点などを紹介してください。",
     tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+    image: "/works/project-1.svg",
     link: "#",
     repo: "#",
   },
@@ -45,6 +48,7 @@ export const projects: Project[] = [
     description:
       "プロジェクトの概要をここに記載します。使用技術や役割、成果などを簡潔にまとめると伝わりやすくなります。",
     tags: ["React", "Node.js", "PostgreSQL"],
+    image: "/works/project-2.svg",
     link: "#",
     repo: "#",
   },
@@ -54,6 +58,7 @@ export const projects: Project[] = [
     description:
       "プロジェクトの概要をここに記載します。個人開発・チーム開発いずれの場合も、担当範囲を明記すると良いです。",
     tags: ["Python", "FastAPI", "Docker"],
+    image: "/works/project-3.svg",
     link: "#",
     repo: "#",
   },
