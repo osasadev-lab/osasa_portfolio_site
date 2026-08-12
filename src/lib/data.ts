@@ -33,6 +33,16 @@ export const profile = {
 // TODO: 実際の制作物情報に差し替えてください
 export const projects: Project[] = [
   {
+    id: "project-2",
+    title: "待ち合わせ支援サービス「cocode」(v1.0)",
+    description:
+      "ユーザー間でお互いの位置情報と設定した待ち合わせ地点を共有し、待ち合わせを支援するサービスです。",
+    tags: ["Go", "GCP(Cloud Run)", "Next.js", "React", "TypeScript", "Tailwind CSS", "WebSocket", "MapLibre","Supabase (Postgres)"],
+    image: "/works/2.png",
+    link: "https://cocode-505303.web.app/",
+    repo: "https://github.com/osasadev-lab/cocode_project",
+  },
+  {
     id: "project-1",
     title: "コーポレートサイトを考える",
     description:
@@ -41,16 +51,6 @@ export const projects: Project[] = [
     image: "/works/1.png",
     link: "https://3d-fictitious-company.vercel.app/",
     repo: "https://github.com/osasadev-lab/3D_FictitiousCompany",
-  },
-  {
-    id: "project-2",
-    title: "サンプルプロジェクト B",
-    description:
-      "プロジェクトの概要をここに記載します。使用技術や役割、成果などを簡潔にまとめると伝わりやすくなります。",
-    tags: ["React", "Node.js", "PostgreSQL"],
-    image: "/works/project-2.svg",
-    link: "#",
-    repo: "#",
   },
   {
     id: "project-3",
