@@ -33,11 +33,21 @@ export const profile = {
 // TODO: 実際の制作物情報に差し替えてください
 export const projects: Project[] = [
   {
+    id: "project-3",
+    title: "チーム/組織向けタスク管理サービス（開発中）",
+    description:
+      "Asana的なUIを持つ、チーム/組織向けタスク管理サービス。次期開発にてプライベートの情報に基づいたAI(RAG)エージェント機能を実装予定。",
+    tags: ["Go(Gin)", "GCP(Cloud Run)", "Next.js", "React", "TypeScript", "Cloudflare", "Supabase (Postgres)"],
+    image: "",
+    link: "https://aibo-web.osasadev.workers.dev/",
+    repo: "https://github.com/osasadev-lab/aibo_pj",
+  },
+  {
     id: "project-2",
     title: "待ち合わせ支援サービス「cocode」(v1.0)",
     description:
       "ユーザー間でお互いの位置情報と設定した待ち合わせ地点を共有し、待ち合わせを支援するサービスです。",
-    tags: ["Go", "GCP(Cloud Run)", "Next.js", "React", "TypeScript", "Tailwind CSS", "WebSocket", "MapLibre","Supabase (Postgres)"],
+    tags: ["Go", "GCP(Cloud Run)", "Next.js", "React", "TypeScript", "Firebase", "Supabase (Postgres)", "MapLibre"],
     image: "/works/2.png",
     link: "https://cocode-505303.web.app/",
     repo: "https://github.com/osasadev-lab/cocode_project",
@@ -51,15 +61,5 @@ export const projects: Project[] = [
     image: "/works/1.png",
     link: "https://3d-fictitious-company.vercel.app/",
     repo: "https://github.com/osasadev-lab/3D_FictitiousCompany",
-  },
-  {
-    id: "project-3",
-    title: "サンプルプロジェクト C",
-    description:
-      "プロジェクトの概要をここに記載します。個人開発・チーム開発いずれの場合も、担当範囲を明記すると良いです。",
-    tags: ["Python", "FastAPI", "Docker"],
-    image: "/works/project-3.svg",
-    link: "#",
-    repo: "#",
   },
 ];
