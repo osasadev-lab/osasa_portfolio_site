@@ -33,6 +33,16 @@ export const profile = {
 // TODO: 実際の制作物情報に差し替えてください
 export const projects: Project[] = [
   {
+    id: "project-4",
+    title: "使用しているエージェントの可視化（設計中）",
+    description:
+      "ユーザーがローカルで使用しているAIエージェントの行動を可視化するサービス。ユーザーが設定した空間やアバターでエージェントが動く。空間内の家具やアバターの装飾を課金アイテムとして販売することも検討中。",
+    tags: [""],
+    image: "",
+    link: "#",
+    repo: "#",
+  },
+  {
     id: "project-3",
     title: "チーム/組織向けタスク管理サービス（開発中）",
     description:
